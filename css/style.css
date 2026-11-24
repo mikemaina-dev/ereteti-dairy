@@ -1,0 +1,126 @@
+:root {
+  --green: #2f6f3e;
+  --green-dark: #1f4d2a;
+  --cream: #f7f4ea;
+  --text: #222;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+h1, h2, caption {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+header {
+  background: var(--green);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+header h1 { margin: 0 0 .25rem; }
+header p { margin: 0; }
+.logo { height: 56px; width: auto; }
+
+nav { background: var(--green-dark); }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav a {
+  display: block;
+  color: #fff;
+  padding: .8rem 1.1rem;
+  text-decoration: none;
+}
+nav a:hover { background: var(--green); }
+
+main, aside {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+main h2 { color: var(--green-dark); }
+
+img { max-width: 100%; height: auto; }
+
+.route-cards {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.route-cards a {
+  display: block;
+  background: #fff;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  padding: .75rem 1.25rem;
+  color: var(--green-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+.route-cards a:hover { background: var(--green); color: #fff; }
+
+form label { display: block; margin-top: .75rem; font-weight: 600; }
+input, select {
+  width: 100%;
+  max-width: 340px;
+  padding: .5rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font: inherit;
+}
+button {
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  border: 0;
+  padding: .6rem 1.4rem;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover { background: var(--green-dark); }
+
+.message { color: #b00020; margin: .25rem 0 0; min-height: 1em; }
+
+.table-scroll { overflow-x: auto; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+caption { text-align: left; font-weight: 700; padding: .5rem 0; }
+th, td { border: 1px solid #ccc; padding: .5rem .75rem; text-align: left; }
+thead th { background: var(--green); color: #fff; }
+tbody tr:nth-child(even) { background: #f1f5ee; }
+
+aside {
+  background: #fff;
+  border-left: 5px solid var(--green);
+  margin-top: 1.5rem;
+}
+aside h2 { margin-top: 0; }
+
+footer {
+  background: var(--green-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+footer p { margin: .25rem 0; }
